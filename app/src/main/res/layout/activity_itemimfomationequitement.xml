@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_item_leaveapplication"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    android:layout_marginBottom="@dimen/Margin_padding5">
+
+    <RelativeLayout
+        android:background="@drawable/backgroud_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/stt_imfomation_equitment"
+                    android:layout_width="@dimen/Margin_padding30"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+
+                <TextView
+                    android:id="@+id/code_imfomation_equitment"
+                    android:layout_width="@dimen/Margin_padding65"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:gravity="center"
+                    android:text="IPHONE11"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize13" />
+
+                <TextView
+                    android:id="@+id/name_imfomation_equitment"
+                    android:layout_width="@dimen/heith_edtreason_activity_infomationleave"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/Margin_padding5"
+                    android:paddingRight="@dimen/Margin_padding5"
+                    android:text="Iphone 11"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+
+                <TextView
+                    android:id="@+id/status_imfomation_equitment"
+                    android:layout_width="@dimen/Margin_padding60"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Từ chối"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize13" />
+
+                <Button
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:id="@+id/remove_equiment"
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:background="@drawable/closs" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_dialog_notetask"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_dialog_notetask"
+        android:background="@color/menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Từ chối thiết bị"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize16"></TextView>
+
+        <ImageView
+            android:id="@+id/imgexit"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@drawable/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/Margin_padding10"
+        android:paddingBottom="@dimen/Margin_padding10">
+
+        <LinearLayout
+            android:id="@+id/group_nameCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margin_padding5"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Tên tiết bị: "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize16" />
+
+            <TextView
+                android:id="@+id/equitmentnamedialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Iphone 11 "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize16"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_button_dialog_checkintime"
+            android:layout_below="@+id/group_nameCV"
+            android:layout_marginTop="@dimen/Margin_padding25">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/Margin_padding5"
+                android:layout_marginTop="@dimen/Margin_padding5"
+                android:text="Lý do từ chối: "
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize16" />
+
+            <EditText
+                android:id="@+id/reasonforrefusal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/width_button_dialog_checkintime"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|top"
+                android:paddingLeft="@dimen/Margin_padding5"
+                android:paddingTop="@dimen/Margin_padding5"
+                android:hint="Nhập lí do từ chối"
+                android:paddingBottom="@dimen/Margin_padding5"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:background="@drawable/backgroud_edt"
+                android:text=""
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize16" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="@dimen/width_button_dialog_notetask"
+                android:layout_height="@dimen/heith_button_dialog_notetask"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="Lưu"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="@dimen/width_button_dialog_notetask"
+                android:layout_height="@dimen/heith_button_dialog_notetask"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="hủy"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

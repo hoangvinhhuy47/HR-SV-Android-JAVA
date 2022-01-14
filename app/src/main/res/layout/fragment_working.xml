@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    android:layout_marginBottom="@dimen/Margin_padding5"
+    android:background="#E9ECE9"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:paddingBottom="@dimen/Margin_padding15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <GridLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:rowCount="5">
+
+                <RelativeLayout
+                    android:id="@+id/CheckInTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginTop="@dimen/Margin_padding15"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_icon"
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:layout_marginRight="@dimen/Margin_padding20"
+                        android:src="@drawable/checkinout" />
+
+                    <RelativeLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:textAllCaps="true"
+
+                            android:id="@+id/textclock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:format12Hour="k:m:sa"
+                            android:format24Hour="E, d-M-yyyy k:m:sa"
+                            android:textColor="@color/mautrang"
+                            android:textSize="@dimen/TextSize18" />
+
+                        <TextView
+                            android:textAllCaps="true"
+
+                            android:id="@+id/shiftname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textclock"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/mautrang"
+                            android:textSize="@dimen/TextSize18" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textAllCaps="true"
+                        android:id="@+id/textcheckin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/Margin_padding15"
+                        android:text="Vào Ca/Ra Ca"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+
+                    <ProgressBar
+                        android:id="@+id/pro_checkin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:outlineSpotShadowColor="@color/mautrang"
+                        android:visibility="gone"></ProgressBar>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/leaveapplication"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginTop="@dimen/Margin_padding20"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/Margin_padding5">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:src="@drawable/leaveapplication" />
+
+                    <TextView
+                        android:textAllCaps="true"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Nghỉ Phép  "
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginTop="@dimen/Margin_padding20"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/Margin_padding5">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:src="@drawable/registerot" />
+
+                    <TextView
+                        android:textAllCaps="true"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Đăng Ký Làm Thêm  "
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/DataWorkingAttendace"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginTop="@dimen/Margin_padding20"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/Margin_padding5">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:src="@drawable/calendarworking" />
+
+                    <TextView
+                        android:textAllCaps="true"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Lịch Làm Việc  "
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/workingemployee"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginTop="@dimen/Margin_padding20"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/Margin_padding5">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:src="@drawable/workingemployee" />
+
+                    <TextView
+                        android:textAllCaps="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Chấm Công  "
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+                </RelativeLayout>
+            </GridLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+    <include
+        android:id="@+id/loadtask"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

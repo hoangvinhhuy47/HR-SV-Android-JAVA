@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <RelativeLayout
+        android:id="@+id/toplinear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding45"
+        android:background="#ffffff"
+        tools:ignore="Orientation">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông tin thiết bị"
+            android:textAllCaps="true"
+            android:textColor="@color/menu"
+            android:textSize="@dimen/TextSize18">
+
+        </TextView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplinear"
+        android:layout_marginBottom="@dimen/Margin_padding50">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding3"
+                android:layout_marginTop="@dimen/Margin_padding5"
+                android:layout_marginRight="@dimen/Margin_padding3"
+                app:cardBackgroundColor="#EFF1EF"
+                app:cardCornerRadius="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/Margin_padding5"
+                    android:paddingRight="@dimen/Margin_padding5"
+                    android:paddingBottom="@dimen/Margin_padding5"
+                    tools:ignore="Orientation">
+
+                    <GridLayout
+                        android:id="@+id/tablei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/Margin_padding5"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="2"
+                        android:paddingLeft="@dimen/Margin_padding7"
+                        android:rowCount="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/Margin_padding1"
+                            android:text="Họ và tên:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <TextView
+                            android:id="@+id/name_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding35"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:layout_marginRight="@dimen/margin_90_activity_imfomationequtment"
+                            android:background="@drawable/backgroud_edt2"
+                            android:gravity="left|center"
+                            android:hint="Nguyễn Chánh Trung"
+                            android:paddingLeft="@dimen/Margin_padding5"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginRight="@dimen/Margin_padding1"
+                            android:text="Người giao:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <TextView
+                            android:id="@+id/name_assigment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding35"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginRight="@dimen/margin_90_activity_imfomationequtment"
+                            android:background="@drawable/backgroud_edt2"
+                            android:gravity="left|center"
+                            android:hint="Nguyễn Chánh Trung"
+                            android:paddingLeft="@dimen/Margin_padding7"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:gravity="center"
+                            android:text="Từ ngày:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <TextView
+                            android:id="@+id/fromday_info_equitment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/Margin_padding35"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginRight="@dimen/margin_90_activity_imfomationequtment"
+                            android:background="@drawable/backgroud_edt2"
+                            android:gravity="left|center"
+                            android:hint="01/01/2000"
+                            android:paddingLeft="@dimen/Margin_padding7"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="@dimen/Margin_padding20"
+                            android:gravity="center"
+                            android:text="Lý Do:"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                        <TextView
+                            android:id="@+id/note_infoequitment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_90_activity_imfomationequtment"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:layout_marginTop="@dimen/Margin_padding15"
+                            android:layout_marginRight="@dimen/margin_90_activity_imfomationequtment"
+                            android:background="@drawable/backgroud_edt2"
+                            android:gravity="left|top"
+                            android:hint="Nhập lý do..."
+                            android:padding="@dimen/Margin_padding7"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"
+                            tools:ignore="RtlCompat"></TextView>
+                    </GridLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/table"
+                android:layout_marginLeft="@dimen/Margin_padding3"
+                android:layout_marginTop="@dimen/Margin_padding5"
+                android:layout_marginRight="@dimen/Margin_padding3"
+                android:layout_marginBottom="@dimen/Margin_padding5"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/table2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding40"
+                        android:background="#E7FAF8">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="stt"
+                                android:textAllCaps="true"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Mã TB"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Tên TB"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Trạng Thái"
+                                android:textColor="@color/mauden"
+                                android:textSize="@dimen/TextSize14" />
+
+                            <ImageView
+                                android:id="@+id/info_equitment"
+                                android:layout_width="@dimen/width_icon"
+                                android:layout_height="@dimen/heith_icon"
+                                android:layout_gravity="center_vertical" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/table2"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginTop="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recy_infoequitment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="@dimen/Margin_padding5"
+                            android:scrollbars="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="RtlCompat"></androidx.recyclerview.widget.RecyclerView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding50"
+        android:layout_alignParentBottom="true"
+        android:background="#CDE6CE"
+        tools:ignore="Orientation">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/Margin_padding8">
+
+            <Button
+                android:id="@+id/btnDY"
+                android:layout_width="@dimen/width_button_activity_imfomationequtment"
+                android:layout_height="@dimen/heith_button_activity_imfomationequtment"
+                android:layout_weight="1"
+                android:background="@drawable/textboxaccount"
+                android:text="Đồng Ý"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize12" />
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="@dimen/width_button_activity_imfomationequtment"
+                android:layout_height="@dimen/heith_button_activity_imfomationequtment"
+                android:layout_marginLeft="@dimen/Margin_padding20"
+                android:layout_weight="1"
+                android:background="@drawable/textbox"
+                android:text="Đóng"
+                android:textColor="@color/menu"
+                android:textSize="@dimen/TextSize12" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

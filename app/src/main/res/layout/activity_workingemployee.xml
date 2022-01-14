@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8ECE9"
+    tools:context=".Activity.WorkingEmployeeActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/toplinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Margin_padding40"
+                android:background="#FFFFFF"
+                tools:ignore="Orientation">
+
+                <ImageView
+                    android:id="@+id/backworking"
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:background="@drawable/back"
+                    android:padding="@dimen/Margin_padding5"></ImageView>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Lịch Chấm Công"
+                    android:textColor="@color/menu"
+                    android:textSize="@dimen/TextSize18">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toplinear"
+            android:layout_marginLeft="@dimen/Margin_padding2"
+            android:layout_marginTop="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding2"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/Margin_padding5"
+                android:paddingBottom="@dimen/Margin_padding5"
+                tools:ignore="Orientation">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin_padding5"
+                    android:layout_marginBottom="@dimen/Margin_padding5"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="3"
+                    android:paddingLeft="@dimen/Margin_padding7"
+                    android:rowCount="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Từ Ngày:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/fromdayworking"
+                        android:layout_width="@dimen/width_date_activity_leaveapplitcation"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt"
+                        android:drawableEnd="@drawable/dropdowndate"
+                        android:gravity="center"
+                        android:hint="Chọnngày"
+                        android:text="01/01/2000"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14"
+                        tools:ignore="RtlCompat"></TextView>
+
+                    <Button
+                        android:id="@+id/btnsearch"
+                        android:layout_width="@dimen/width_button_activity_leaveapplitcation"
+                        android:layout_height="@dimen/heith_button_activity_leaveapplitcation"
+                        android:layout_marginLeft="@dimen/Margin_padding10"
+                        android:layout_marginTop="@dimen/Margin_padding5"
+                        android:background="@drawable/textboxaccount"
+                        android:text="Tìm"
+                        android:textColor="@color/mautrang"
+                        android:textSize="@dimen/TextSize12"></Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/Margin_padding10"
+                        android:text="Đến Ngày:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/todayworking"
+                        android:layout_width="@dimen/width_date_activity_leaveapplitcation"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginTop="@dimen/Margin_padding10"
+                        android:background="@drawable/backgroud_edt"
+                        android:drawableEnd="@drawable/dropdowndate"
+                        android:gravity="center"
+                        android:hint="Chọnngày"
+                        android:text="01/01/2000"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14"
+                        tools:ignore="RtlCompat"></TextView>
+                </GridLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_marginLeft="@dimen/Margin_padding3"
+            android:layout_marginTop="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding3"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/table2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding40"
+                    android:background="#92D559">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:layout_width="@dimen/width_button_date_Item_workingemployee"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/Margin_padding5"
+                            android:gravity="center"
+                            android:text="Thời gian"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Chi tiết"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize14" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/table2"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerWorkingEmployee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

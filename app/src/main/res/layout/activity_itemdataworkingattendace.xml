@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_Item_dataworkingattendace"
+    android:layout_marginLeft="@dimen/Margin_padding3"
+    android:layout_marginTop="@dimen/Margin_padding10"
+    android:layout_marginRight="@dimen/Margin_padding3"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroud_home"
+        android:padding="@dimen/Margin_padding2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/attendace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="1">
+
+                <Button
+                    android:id="@+id/dateworking"
+                    android:layout_width="@dimen/heith_Item_workingemployee"
+                    android:layout_height="@dimen/Margin_padding40"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@drawable/textboxaccount2"
+                    android:textSize="@dimen/TextSize12"></Button>
+
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="1"
+                    android:rowCount="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding10">
+
+                        <TextView
+                            android:id="@+id/shiftnameworking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ca Hành Chính"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize16"></TextView>
+
+                        <TextView
+                            android:id="@+id/workingtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding20"
+                            android:layout_marginRight="@dimen/Margin_padding3"
+                            android:text="07:00 - 00:00"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize15"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginTop="@dimen/Margin_padding5">
+
+                        <TextView
+                            android:id="@+id/timetIN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/Margin_padding3"
+                            android:text="00:00"
+                            android:textColor="@color/mauxanh"
+                            android:textSize="@dimen/TextSize14"></TextView>
+
+                    </LinearLayout>
+                </GridLayout>
+            </GridLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

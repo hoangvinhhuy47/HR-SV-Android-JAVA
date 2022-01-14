@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/all_equitment"
+        android:title="Tất Cả" />
+    <item android:id="@+id/wait_equitment"
+        android:title="Chờ Xác Nhận" />
+    <item android:id="@+id/received_equitment"
+        android:title="Đã Nhận" />
+    <item android:id="@+id/received1_equitment"
+        android:title="Nhận Một Phần" />
+    <item android:id="@+id/refuse_equitment"
+        android:title="Từ Chối" />
+
+</menu>

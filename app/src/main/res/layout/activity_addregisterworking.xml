@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8ECE9"
+    tools:context=".Activity.AddLeaveApplicationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/top"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Margin_padding45"
+                android:background="#FFFFFF">
+                <TextView
+                    android:id="@+id/Titleleave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Đăng ký làm thêm"
+                    android:textColor="#14A11A"
+                    android:textSize="@dimen/TextSize18"></TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/group_loainp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_group_activity_infomationleave"
+                    android:layout_marginTop="@dimen/Margin_padding15">
+
+                    <LinearLayout
+                        android:id="@+id/group1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:id="@+id/txt_tenQl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="Tên quản lý "
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding40"
+                        android:layout_below="@+id/group1"
+                        android:layout_marginLeft="@dimen/Margin_padding10"
+                        android:layout_marginRight="@dimen/Margin_padding10"
+                        android:background="@drawable/backgroud_edt2">
+
+                        <Spinner
+                            android:id="@+id/spinneraddworking"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:dropDownVerticalOffset="@dimen/Margin_padding40"
+                            android:popupBackground="@android:color/white"
+                            android:popupElevation="@dimen/Margin_padding2"
+                            android:stateListAnimator="@drawable/spinner_sla"
+                            android:textSize="@dimen/TextSize14"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></Spinner>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_group_activity_infomationleave"
+                    android:layout_below="@+id/group_loainp">
+
+                    <LinearLayout
+                        android:id="@+id/group2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:id="@+id/txt_lnp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="Loại nghỉ phép "
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding40"
+                        android:layout_below="@+id/group2"
+                        android:layout_marginLeft="@dimen/Margin_padding10"
+                        android:layout_marginRight="@dimen/Margin_padding10"
+                        android:background="@drawable/backgroud_edt2">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinner_symboladdworking"
+                            style="@style/spinner_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/heith_edt_activity_infomationleave"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:dropDownVerticalOffset="@dimen/heith_edt_activity_infomationleave"
+                            android:popupBackground="@android:color/white"
+                            android:popupElevation="@dimen/Margin_padding2"
+                            android:stateListAnimator="@drawable/spinner_sla"
+                            android:textSize="@dimen/TextSize14"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatSpinner>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_group_activity_infomationleave"
+                    android:layout_below="@+id/top2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/group3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:id="@+id/txt_tn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="Từ ngày "
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/group3"
+                        android:layout_marginLeft="@dimen/Margin_padding10"
+                        android:layout_marginRight="@dimen/Margin_padding10">
+
+                        <TextView
+                            android:id="@+id/fromdayregister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/Margin_padding40"
+                            android:layout_weight="1"
+                            android:background="@drawable/backgroud_edt2"
+                            android:drawableEnd="@drawable/dropdowntime"
+                            android:gravity="center"
+                            android:hint="Chọn Ngày"
+                            android:padding="@dimen/Margin_padding3"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <Button
+                            android:id="@+id/fromtimeregister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/Margin_padding40"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:layout_weight="1"
+                            android:background="@drawable/backgroud_edt2"
+                            android:drawableEnd="@drawable/dropdowntime"
+                            android:hint="Chọn Giờ"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></Button>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_group_activity_infomationleave"
+                    android:layout_below="@+id/top3">
+
+                    <LinearLayout
+                        android:id="@+id/group4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:id="@+id/txtdn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="Đến ngày "
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/group4"
+                        android:layout_marginLeft="@dimen/Margin_padding10"
+                        android:layout_marginRight="@dimen/Margin_padding10">
+                        <TextView
+                            android:id="@+id/todayregister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/Margin_padding40"
+                            android:layout_weight="1"
+                            android:background="@drawable/backgroud_edt2"
+                            android:drawableEnd="@drawable/dropdowntime"
+                            android:gravity="center"
+                            android:hint="Chọn Ngày"
+                            android:padding="@dimen/Margin_padding3"
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></TextView>
+
+                        <Button
+                            android:id="@+id/totimeregister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/Margin_padding40"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:layout_weight="1"
+                            android:background="@drawable/backgroud_edt2"
+                            android:drawableEnd="@drawable/dropdowntime"
+                            android:hint="Chọn Giờ"
+                            android:textSize="@dimen/TextSize13"
+                            tools:ignore="RtlCompat"></Button>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/top5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_edtreason_activity_infomationleave"
+                    android:layout_below="@+id/top4"
+                    android:layout_marginTop="@dimen/Margin_padding5"
+
+                    tools:ignore="Orientation">
+
+                    <LinearLayout
+                        android:id="@+id/group5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:id="@+id/lidonghi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="Lý do nghỉ "
+                            android:textColor="@color/mauden"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/Margin_padding10"
+                            android:layout_marginBottom="@dimen/Margin_padding5"
+                            android:text="*"
+                            android:textColor="#ca0000"
+                            android:textSize="@dimen/TextSize13"></TextView>
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_below="@+id/group5"
+                        android:id="@+id/reasonregister"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/Margin_padding10"
+                        android:layout_marginRight="@dimen/Margin_padding10"
+                        android:background="@drawable/backgroud_edt2"
+                        android:gravity="left|top"
+                        android:hint="Nhập lý do nghỉ..."
+                        android:padding="@dimen/Margin_padding7"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize13"
+                        tools:ignore="RtlCompat"></EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="@dimen/Margin_padding10"
+                    android:layout_marginLeft="@dimen/Margin_padding10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_group_activity_infomationleave"
+                    android:layout_below="@+id/top5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/Margin_padding5"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/groupbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <Button
+                            android:id="@+id/saveregister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/heith_button_activity_infomationleave"
+                            android:layout_weight="1"
+                            android:background="@drawable/textboxaccount"
+                            android:text="Lưu"
+                            android:textColor="@color/mautrang"
+                            android:textSize="@dimen/TextSize10" />
+
+                        <Button
+                            android:id="@+id/savesendregister"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/heith_button_activity_infomationleave"
+                            android:layout_marginLeft="@dimen/Margin_padding10"
+                            android:layout_marginRight="@dimen/Margin_padding10"
+                            android:layout_weight="1"
+                            android:background="@drawable/textboxaccount"
+                            android:padding="@dimen/kc5"
+                            android:text="Lưu và Gửi"
+                            android:textColor="@color/mautrang"
+                            android:textSize="@dimen/TextSize10" />
+
+                        <Button
+                            android:id="@+id/closeregiser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/heith_button_activity_infomationleave"
+                            android:layout_weight="1"
+                            android:background="@drawable/textbox1"
+                            android:text="Hủy Bỏ"
+                            android:textColor="@color/mautrang"
+                            android:textSize="@dimen/TextSize10" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/loader"
+            layout="@layout/layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="imgexit" type="id" />
+    <item name="Tasknamedialog" type="id" />
+    <item name="detailtask" type="id" />
+    <item name="finalPercent" type="id" />
+    <item name="close" type="id" />
+</resources>

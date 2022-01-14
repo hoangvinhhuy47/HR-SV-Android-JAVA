@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECE9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_acount"
+            android:background="#ffffff"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding60">
+            <ImageView
+                android:id="@+id/sdsdsdsd"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:layout_width="@dimen/Margin_padding35"
+                android:layout_height="@dimen/Margin_padding35"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_baseline_account_circle_24"></ImageView>
+            <TextView
+                android:layout_toRightOf="@+id/sdsdsdsd"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heith_icon"
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize16"
+                tools:ignore="RtlCompat"></TextView>
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/Margin_padding10"
+                android:id="@+id/loaddingwifi"
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/heith_icon"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/reset"></ImageView>
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:id="@+id/topliner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Margin_padding3"
+                android:background="@color/colorAccent"></RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout
+
+            android:id="@+id/nav_host_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/Margin_padding55"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#FAF7F7"
+
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextColor="@drawable/bottom_navigation_selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

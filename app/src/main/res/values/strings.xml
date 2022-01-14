@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+        <string name="app_name">Bottom Navigation</string>
+        <string name="title_shop">Shop</string>
+        <string name="title_gifts">Gifts</string>
+        <string name="title_cart">Cart</string>
+        <string name="title_profile">Profile</string>
+    <string name="chapnhan">Chấp Nhận</string>
+    <string name="tuchoi">Từ Chối</string>
+    <string name="nametype"> Chọn Loại Nghỉ</string>
+    <string name="typeapllication">
+        <item>Nghỉ Phép</item>
+        <item>Đi Trể</item>
+        <item>Về Sớm</item>
+        <item>OT</item>
+    </string>
+</resources>

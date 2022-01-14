@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_item_leaveapplication"
+    app:cardCornerRadius="5dp"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    android:layout_marginBottom="@dimen/Margin_padding5">
+
+    <RelativeLayout
+        android:id="@+id/backgroud_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/stt_equitment"
+                    android:layout_width="@dimen/Margin_padding30"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/Margin_padding10"
+                    android:layout_gravity="center"
+                    android:id="@+id/formday_equitment"
+                    android:layout_width="@dimen/Margin_padding65"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="01/01/2000\n00:00"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/Margin_padding5"
+                    android:layout_marginRight="@dimen/Margin_padding5"
+                    android:layout_gravity="center"
+                    android:id="@+id/name_equitment"
+                    android:layout_width="@dimen/width_button_dialog_checkintime"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/Margin_padding5"
+                    android:paddingRight="@dimen/Margin_padding5"
+                    android:text="Phan trần Hiếu Nhân"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/status_equitment"
+                    android:layout_width="@dimen/Margin_padding60"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Nhận một phần"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

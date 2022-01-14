@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/top0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/Margin_padding30">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/logo_settingconfig"
+            android:layout_width="@dimen/width_imglogo_activity_login"
+            android:layout_height="@dimen/heith_imglogo_activity_login"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logo2" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_settingconfig"
+            android:layout_centerHorizontal="true"
+            android:text="softwareviet"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/top0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="@dimen/Margin_padding30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dadsd2"
+                android:background="@drawable/textbox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_edt_activity_login"
+                android:layout_marginLeft="@dimen/Margin_padding20"
+                android:layout_marginTop="@dimen/Margin_padding30"
+                android:layout_marginRight="@dimen/Margin_padding20">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:paddingLeft="@dimen/Margin_padding10"
+                    android:layout_marginRight="@dimen/Margin_padding10"
+                    android:layout_marginLeft="@dimen/Margin_padding10"
+                    android:id="@+id/iduser"
+                    android:inputType="text"
+                    android:hint="Username"
+                    android:textSize="@dimen/TextSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dadsd"
+                android:background="@drawable/textbox"
+                android:layout_below="@+id/dadsd2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heith_edt_activity_login"
+                android:layout_marginLeft="@dimen/Margin_padding20"
+                android:layout_marginTop="@dimen/Margin_padding30"
+                android:layout_marginRight="@dimen/Margin_padding20"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:paddingLeft="@dimen/Margin_padding10"
+                    android:layout_marginRight="@dimen/Margin_padding10"
+                    android:layout_marginLeft="@dimen/Margin_padding10"
+                    android:id="@+id/idpassword"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:textSize="@dimen/TextSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dadsd"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:layout_marginTop="@dimen/Margin_padding35"
+                android:layout_marginRight="@dimen/Margin_padding10">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heith_button_activity_login"
+                    android:layout_marginRight="@dimen/Margin_padding15"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonsettingconfig"
+                    android:padding="@dimen/Margin_padding15"
+                    android:text="Đăng nhập"
+                    android:textColor="@color/mautrang"
+                    android:textSize="@dimen/TextSize12" />
+
+                <Button
+                    android:id="@+id/btnthoat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/heith_button_activity_login"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/textboxaccount2"
+                    android:padding="@dimen/Margin_padding15"
+                    android:text="Thoát"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize12" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

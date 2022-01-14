@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_dialog_notetask"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_dialog_notetask"
+        android:background="@color/menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Cập nhật tiến độ"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize16"></TextView>
+
+        <ImageView
+            android:id="@+id/imgexit"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@drawable/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#EFEFEF"
+        android:paddingTop="@dimen/Margin_padding10"
+        android:paddingBottom="@dimen/Margin_padding10">
+
+        <LinearLayout
+            android:id="@+id/group_nameCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Tên công việc: "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <TextView
+                android:id="@+id/Tasknamedialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Xây dựng giao diện công Xây dựng giao diện công "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_groupedt_dialog_notetask"
+            android:layout_below="@+id/group_nameCV"
+            android:layout_marginTop="@dimen/Margin_padding10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/kc5"
+                android:text="Chi tiết công việc: "
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize15" />
+
+            <EditText
+                android:id="@+id/detailtask"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/heith_button_dialog_notetask"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:paddingLeft="@dimen/Margin_padding5"
+                android:background="@drawable/backgroud_edt2"
+                android:text=""
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_groupedt_dialog_notetask"
+            android:layout_below="@id/top2"
+            android:layout_marginTop="@dimen/Margin_padding10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/kc5"
+                android:text="Cập nhật tiến độ:"
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize15" />
+
+            <EditText
+                android:id="@+id/finalPercent"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/heith_button_dialog_notetask"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:paddingLeft="@dimen/Margin_padding5"
+                android:background="@drawable/backgroud_edt2"
+                android:inputType="number"
+                android:text=""
+                android:textColor="@color/mauxanh"
+                android:textSize="@dimen/TextSize15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="@dimen/width_button_dialog_notetask"
+                android:layout_height="@dimen/heith_button_dialog_notetask"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="Chấp nhận"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="@dimen/width_button_dialog_notetask"
+                android:layout_height="@dimen/heith_button_dialog_notetask"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="hủy"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

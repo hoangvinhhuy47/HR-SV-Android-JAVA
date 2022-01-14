@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    android:layout_marginBottom="@dimen/Margin_padding5"
+    >
+
+    <RelativeLayout
+        android:background="#F4F8F4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="5">
+
+                <RelativeLayout
+                    android:id="@+id/see_assigment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginTop="@dimen/Margin_padding15"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/Margin_padding5">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:src="@drawable/checkinout" />
+
+                    <TextView
+                        android:layout_marginRight="@dimen/Margin_padding10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Tiếp nhận TS/TB "
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/see_recovery"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/heith_cardview_fragment_working"
+                    android:layout_marginTop="@dimen/Margin_padding15"
+                    android:layout_marginLeft="@dimen/Margin_padding12"
+                    android:layout_marginRight="@dimen/Margin_padding12"
+                    android:background="@drawable/backgroud_home"
+                    android:orientation="vertical"
+                    android:padding="@dimen/Margin_padding5">
+
+                    <ImageView
+                        android:layout_width="@dimen/width_icon_cardview_fragment_working"
+                        android:layout_height="@dimen/heith_icon_cardview_fragment_working"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/Margin_padding15"
+                        android:src="@drawable/out_50" />
+
+                    <TextView
+                        android:layout_marginRight="@dimen/Margin_padding10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="Bàn Giao TS/TB"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize18" />
+                </RelativeLayout>
+        </GridLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loadtask"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

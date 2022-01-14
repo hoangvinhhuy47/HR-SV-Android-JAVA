@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
+    viewBinding.enabled = true
+
+    compileOptions {
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.softwareview.hr"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 2
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.acitivity_settingconfig.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+//    compileOptions{
+//        soureCompatibility JavaVersion.VERSION_1_8;
+//        targetCompatibility JavaVersion.VERSION_1_8;
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    testImplementation 'junit:junit:4.13.1'
+//    androidTestImplementation 'androidx.acitivity_settingconfig.ext:junit:1.1.1'
+//    androidTestImplementation 'androidx.acitivity_settingconfig.espresso:espresso-core:3.2.0'
+    implementation "androidx.cardview:cardview:1.0.0"
+    //noinspection GradleCompatible
+
+    implementation 'com.android.support:design:28.0.0'
+    //Thư viện netwrk
+
+    implementation 'com.amitshekhar.android:android-networking:0.3.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //noinspection GradleCompatible,GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    debugImplementation 'com.squareup.retrofit2:converter-gson'
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.9.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.moshi:moshi:1.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-location:11.8.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-compat:27.1.1"
+
+    //dexter permissions
+    implementation "com.karumi:dexter:5.0.0"
+    implementation 'com.android.support:multidex:1.0.3'
+    // circular imageview
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
+    implementation('com.journeyapps:zxing-android-embedded:4.2.0') { transitive = false }
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.zxing:core:3.3.0'
+}

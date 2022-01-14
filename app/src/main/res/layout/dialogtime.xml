@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_dialog_time"
+    android:layout_height="@dimen/heith_dialog_time">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_dialog_time"
+        android:background="@color/menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="time"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize16"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/Margin_padding10">
+
+        <TimePicker
+            android:theme="@style/TimePicker_style"
+            android:id="@+id/time123"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heith_TimePicker_dialog_time"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/Margin_padding5"
+            android:timePickerMode="spinner"></TimePicker>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/oktime"
+                android:layout_width="@dimen/width_button_dialog_time"
+                android:layout_height="@dimen/heith_button_dialog_time"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="Chấp nhận"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize12" />
+
+            <Button
+                android:id="@+id/closetime"
+                android:layout_width="@dimen/width_button_dialog_time"
+                android:layout_height="@dimen/heith_button_dialog_time"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="hủy"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize12" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

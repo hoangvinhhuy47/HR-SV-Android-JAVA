@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity_setttingconfig-->
+    <dimen name="width_imglogo_activity_setttingconfig">116.899994dp</dimen>
+    <dimen name="heith_imglogo_activity_setttingconfig">116.899994dp</dimen>
+    <dimen name="heith_button_activity_setttingconfig">66.799995dp</dimen>
+    <!--fragment_acount-->
+    <dimen name="heith_imglogo_fragment_acount">233.799988dp</dimen>
+    <dimen name="heith_button_fragment_acount">66.799995dp</dimen>
+    <!--activity_changepassword-->
+    <dimen name="width_button_activity_changepassword">233.799988dp</dimen>
+    <dimen name="heith_button_activity_changepassword">66.799995dp</dimen>
+    <!--activity_login-->
+    <dimen name="width_imglogo_activity_login">116.899994dp</dimen>
+    <dimen name="heith_imglogo_activity_login">116.899994dp</dimen>
+    <dimen name="heith_edt_activity_login">83.5dp</dimen>
+    <dimen name="heith_button_activity_login">75.15dp</dimen>
+    <!--activity_home-->
+    <dimen name="heith_header_activity_home">75.15dp</dimen>
+    <!--fragment_working-->
+    <dimen name="heith_cardview_fragment_working">100.2dp</dimen>
+    <dimen name="width_icon_cardview_fragment_working">66.799995dp</dimen>
+    <dimen name="heith_icon_cardview_fragment_working">66.799995dp</dimen>
+    <!--activity_leaveapplitcation-->
+    <dimen name="width_button_activity_leaveapplitcation">150.3dp</dimen>
+    <dimen name="heith_button_activity_leaveapplitcation">50.1dp</dimen>
+    <dimen name="heith_table2_activity_leaveapplitcation">58.449997dp</dimen>
+    <dimen name="width_date_activity_leaveapplitcation">208.75dp</dimen>
+    <!--item_leaveapplication-->
+    <dimen name="heith_item_leaveapplication">83.5dp</dimen>
+    <!--activity_infomationleave-->
+    <dimen name="heith_top_activity_infomationleave">58.449997dp</dimen>
+    <dimen name="heith_group_activity_infomationleave">133.59999dp</dimen>
+    <dimen name="heith_edt_activity_infomationleave">83.5dp</dimen>
+    <dimen name="heith_edtreason_activity_infomationleave">167.0dp</dimen>
+    <dimen name="width_edt_ldnldtc_activity_infomationleave">300.6dp</dimen>
+    <dimen name="heith_button_activity_infomationleave">58.449997dp</dimen>
+    <!--activity_addregisterworking-->
+    <dimen name="width_edt_lido_activity_addregisterworking">384.09998dp</dimen>
+    <dimen name="heith_edt_lido_activity_addregisterworking">167.0dp</dimen>
+    <!--activity_dataworkingattendance-->
+    <!--Item_dataworkingattendace-->
+    <dimen name="heith_Item_dataworkingattendace">100.2dp</dimen>
+    <!--activity_workingemployee-->
+    <!--Item_workingemployee-->
+    <dimen name="width_group_employee_Item_workingemployee">392.44998dp</dimen>
+    <dimen name="width_button_date_Item_workingemployee">116.899994dp</dimen>
+    <dimen name="heith_Item_workingemployee">133.59999dp</dimen>
+    <!--fragment_task-->
+    <!--item_task-->
+    <dimen name="heith_item_task">225.45dp</dimen>
+    <dimen name="width_taskname_item_task">384.09998dp</dimen>
+    <dimen name="heith_group_ngaytiendo_item_task">100.2dp</dimen>
+    <dimen name="width_item_group_ngaytiendo_item_task">141.95dp</dimen>
+    <!--fragment_equuitment-->
+    <!--activity_imfomationequtment-->
+    <dimen name="margin_90_activity_imfomationequtment">150.3dp</dimen>
+    <dimen name="heith_edt_tuchoi_activity_imfomationequtment">233.79999dp</dimen>
+    <dimen name="width_button_activity_imfomationequtment">200.4dp</dimen>
+    <dimen name="heith_button_activity_imfomationequtment">58.449997dp</dimen>
+    <!--Dialog-->
+    <!--infomationtask-->
+    <dimen name="heith_Dialog_infomationtask">526.05dp</dimen>
+    <dimen name="heith_content_Dialog_infomationtask">66.799995dp</dimen>
+    <dimen name="width_button_Dialog_infomationtask">400.8dp</dimen>
+    <dimen name="heith_button_Dialog_infomationtask">58.449997dp</dimen>
+    <!--alert_dialog-->
+    <dimen name="heith_alert_dialog">300.6dp</dimen>
+    <dimen name="heith_content_alert_dialog">66.799995dp</dimen>
+    <dimen name="width_button_alert_dialog">400.8dp</dimen>
+    <dimen name="heith_button_alert_dialog">58.449997dp</dimen>
+    <!--dialog_checkintime-->
+    <dimen name="heith_dialog_checkintime">300.6dp</dimen>
+    <dimen name="heith_content_dialog_checkintime">66.799995dp</dimen>
+    <dimen name="width_button_dialog_checkintime">200.4dp</dimen>
+    <dimen name="heith_button_dialog_checkintime">58.449997dp</dimen>
+    <!--dialog_location-->
+    <dimen name="heith_dialog_location">300.6dp</dimen>
+    <dimen name="heith_content_dialog_location">66.799995dp</dimen>
+    <dimen name="width_button_dialog_location">200.4dp</dimen>
+    <dimen name="heith_button_dialog_location">58.449997dp</dimen>
+    <!--dialog_notetask-->
+    <dimen name="heith_dialog_notetask">467.59998dp</dimen>
+    <dimen name="heith_content_dialog_notetask">66.799995dp</dimen>
+    <dimen name="heith_groupedt_dialog_notetask">100.2dp</dimen>
+    <dimen name="width_button_dialog_notetask">200.4dp</dimen>
+    <dimen name="heith_button_dialog_notetask">58.449997dp</dimen>
+    <!--dialog_time-->
+    <dimen name="heith_dialog_time">501.0dp</dimen>
+    <dimen name="width_dialog_time">417.5dp</dimen>
+    <dimen name="heith_content_dialog_time">66.799995dp</dimen>
+    <dimen name="width_button_dialog_time">150.3dp</dimen>
+    <dimen name="heith_button_dialog_time">58.449997dp</dimen>
+    <dimen name="heith_TimePicker_dialog_time">350.69998dp</dimen>
+    <!--Margin_padding-->
+    <dimen name="Margin_padding70">116.899994dp</dimen>
+    <dimen name="Margin_padding69">115.229996dp</dimen>
+    <dimen name="Margin_padding68">113.56dp</dimen>
+    <dimen name="Margin_padding67">111.89dp</dimen>
+    <dimen name="Margin_padding66">110.21999dp</dimen>
+    <dimen name="Margin_padding65">108.549995dp</dimen>
+    <dimen name="Margin_padding64">106.88dp</dimen>
+    <dimen name="Margin_padding63">105.21dp</dimen>
+    <dimen name="Margin_padding62">103.54dp</dimen>
+    <dimen name="Margin_padding61">101.869995dp</dimen>
+    <dimen name="Margin_padding60">100.2dp</dimen>
+    <dimen name="Margin_padding59">98.53dp</dimen>
+    <dimen name="Margin_padding58">96.86dp</dimen>
+    <dimen name="Margin_padding57">95.189995dp</dimen>
+    <dimen name="Margin_padding56">93.52dp</dimen>
+    <dimen name="Margin_padding55">91.85dp</dimen>
+    <dimen name="Margin_padding54">90.18dp</dimen>
+    <dimen name="Margin_padding53">88.509995dp</dimen>
+    <dimen name="Margin_padding52">86.84dp</dimen>
+    <dimen name="Margin_padding51">85.17dp</dimen>
+    <dimen name="Margin_padding50">83.5dp</dimen>
+    <dimen name="Margin_padding49">81.829994dp</dimen>
+    <dimen name="Margin_padding48">80.159996dp</dimen>
+    <dimen name="Margin_padding47">78.49dp</dimen>
+    <dimen name="Margin_padding46">76.82dp</dimen>
+    <dimen name="Margin_padding45">75.15dp</dimen>
+    <dimen name="Margin_padding44">73.479996dp</dimen>
+    <dimen name="Margin_padding43">71.81dp</dimen>
+    <dimen name="Margin_padding42">70.14dp</dimen>
+    <dimen name="Margin_padding41">68.47dp</dimen>
+    <dimen name="Margin_padding_am20">-33.399998dp</dimen>
+    <dimen name="Margin_padding_am19">-31.73dp</dimen>
+    <dimen name="Margin_padding_am18">-30.06dp</dimen>
+    <dimen name="Margin_padding_am17">-28.39dp</dimen>
+    <dimen name="Margin_padding_am16">-26.72dp</dimen>
+    <dimen name="Margin_padding_am15">-25.05dp</dimen>
+    <dimen name="Margin_padding_am14">-23.38dp</dimen>
+    <dimen name="Margin_padding_am13">-21.71dp</dimen>
+    <dimen name="Margin_padding_am12">-20.039999dp</dimen>
+    <dimen name="Margin_padding_am11">-18.369999dp</dimen>
+    <dimen name="Margin_padding40">66.799995dp</dimen>
+    <dimen name="Margin_padding39">65.13dp</dimen>
+    <dimen name="Margin_padding38">63.46dp</dimen>
+    <dimen name="Margin_padding37">61.789997dp</dimen>
+    <dimen name="Margin_padding36">60.12dp</dimen>
+    <dimen name="Margin_padding35">58.449997dp</dimen>
+    <dimen name="Margin_padding34">56.78dp</dimen>
+    <dimen name="Margin_padding33">55.109997dp</dimen>
+    <dimen name="Margin_padding32">53.44dp</dimen>
+    <dimen name="Margin_padding31">51.77dp</dimen>
+    <dimen name="Margin_padding_am10">-16.699999dp</dimen>
+    <dimen name="Margin_padding_am9">-15.03dp</dimen>
+    <dimen name="Margin_padding_am8">-13.36dp</dimen>
+    <dimen name="Margin_padding_am7">-11.69dp</dimen>
+    <dimen name="Margin_padding_am6">-10.0199995dp</dimen>
+    <dimen name="Margin_padding_am5">-8.349999dp</dimen>
+    <dimen name="Margin_padding_am4">-6.68dp</dimen>
+    <dimen name="Margin_padding_am3">-5.0099998dp</dimen>
+    <dimen name="Margin_padding_am2">-3.34dp</dimen>
+    <dimen name="Margin_padding_am1">-1.67dp</dimen>
+    <dimen name="Margin_padding1">1.67dp</dimen>
+    <dimen name="Margin_padding2">3.34dp</dimen>
+    <dimen name="Margin_padding3">5.0099998dp</dimen>
+    <dimen name="Margin_padding4">6.68dp</dimen>
+    <dimen name="Margin_padding5">8.349999dp</dimen>
+    <dimen name="Margin_padding6">10.0199995dp</dimen>
+    <dimen name="Margin_padding7">11.69dp</dimen>
+    <dimen name="Margin_padding8">13.36dp</dimen>
+    <dimen name="Margin_padding9">15.03dp</dimen>
+    <dimen name="Margin_padding10">16.699999dp</dimen>
+    <dimen name="Margin_padding11">18.369999dp</dimen>
+    <dimen name="Margin_padding12">20.039999dp</dimen>
+    <dimen name="Margin_padding13">21.71dp</dimen>
+    <dimen name="Margin_padding14">23.38dp</dimen>
+    <dimen name="Margin_padding15">25.05dp</dimen>
+    <dimen name="Margin_padding16">26.72dp</dimen>
+    <dimen name="Margin_padding17">28.39dp</dimen>
+    <dimen name="Margin_padding18">30.06dp</dimen>
+    <dimen name="Margin_padding19">31.73dp</dimen>
+    <dimen name="Margin_padding20">33.399998dp</dimen>
+    <dimen name="Margin_padding21">35.07dp</dimen>
+    <dimen name="Margin_padding22">36.739998dp</dimen>
+    <dimen name="Margin_padding23">38.41dp</dimen>
+    <dimen name="Margin_padding24">40.079998dp</dimen>
+    <dimen name="Margin_padding25">41.75dp</dimen>
+    <dimen name="Margin_padding26">43.42dp</dimen>
+    <dimen name="Margin_padding27">45.09dp</dimen>
+    <dimen name="Margin_padding28">46.76dp</dimen>
+    <dimen name="Margin_padding29">48.43dp</dimen>
+    <dimen name="Margin_padding30">50.1dp</dimen>
+    <!--TextSize-->
+    <dimen name="TextSize1">1.67sp</dimen>
+    <dimen name="TextSize2">3.34sp</dimen>
+    <dimen name="TextSize3">5.0099998sp</dimen>
+    <dimen name="TextSize4">6.68sp</dimen>
+    <dimen name="TextSize5">8.349999sp</dimen>
+    <dimen name="TextSize6">10.0199995sp</dimen>
+    <dimen name="TextSize7">11.69sp</dimen>
+    <dimen name="TextSize8">13.36sp</dimen>
+    <dimen name="TextSize9">15.03sp</dimen>
+    <dimen name="TextSize10">16.699999sp</dimen>
+    <dimen name="TextSize11">18.369999sp</dimen>
+    <dimen name="TextSize12">20.039999sp</dimen>
+    <dimen name="TextSize13">21.71sp</dimen>
+    <dimen name="TextSize14">23.38sp</dimen>
+    <dimen name="TextSize15">25.05sp</dimen>
+    <dimen name="TextSize16">26.72sp</dimen>
+    <dimen name="TextSize17">28.39sp</dimen>
+    <dimen name="TextSize18">30.06sp</dimen>
+    <dimen name="TextSize19">31.73sp</dimen>
+    <dimen name="TextSize20">33.399998sp</dimen>
+    <dimen name="TextSize21">35.07sp</dimen>
+    <dimen name="TextSize22">36.739998sp</dimen>
+    <dimen name="TextSize23">38.41sp</dimen>
+    <dimen name="TextSize24">40.079998sp</dimen>
+    <dimen name="TextSize25">41.75sp</dimen>
+    <dimen name="TextSize26">43.42sp</dimen>
+    <dimen name="TextSize27">45.09sp</dimen>
+    <dimen name="TextSize28">46.76sp</dimen>
+    <dimen name="TextSize29">48.43sp</dimen>
+    <dimen name="TextSize30">50.1sp</dimen>
+    <!--dÃ¹ngchung-->
+    <dimen name="width_icon">40.079998dp</dimen>
+    <dimen name="heith_icon">40.079998dp</dimen>
+    <dimen name="width_progressbar">66.799995dp</dimen>
+    <dimen name="heith_progressbar">66.799995dp</dimen>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/accpet"
+            android:title="Chấp nhận" />
+        <item android:id="@+id/refuse"
+            android:title="Từ Chối" />
+        <item android:id="@+id/UpdatePercent"
+            android:title="Cập nhật tiến độ" />
+        <item android:id="@+id/detail"
+            android:title="Xem Chi Tiết" />
+
+</menu>

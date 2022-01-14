@@ -1,0 +1,116 @@
+<resources>
+  <dimen name="activity_horizontal_margin">
+    21.33dp
+  </dimen>
+  <dimen name="activity_vertical_margin">
+    21.33dp
+  </dimen>
+  <dimen name="dp1">
+    1.33dp
+  </dimen>
+  <dimen name="dp2">
+    2.67dp
+  </dimen>
+  <dimen name="dp3">
+    4.0dp
+  </dimen>
+  <dimen name="dp4">
+    5.33dp
+  </dimen>
+  <dimen name="dp5">
+    6.67dp
+  </dimen>
+  <dimen name="dp6">
+    8.0dp
+  </dimen>
+  <dimen name="dp7">
+    9.33dp
+  </dimen>
+  <dimen name="dp8">
+    10.67dp
+  </dimen>
+  <dimen name="dp9">
+    12.0dp
+  </dimen>
+  <dimen name="dp10">
+    13.33dp
+  </dimen>
+  <dimen name="dp11">
+    14.67dp
+  </dimen>
+  <dimen name="sp10">
+    13.33sp
+  </dimen>
+  <dimen name="sp20">
+    26.67sp
+  </dimen>
+  <?xmlversion="1.0"encoding="utf-8"?>
+
+    <string name="reply_label">ChấpNhận</string>
+    <dimen name="canhtraihome">45.0dp</dimen>
+    <dimen name="dorongEditText">340.0dp</dimen>
+    <dimen name="canhtrenEditText">110.0dp</dimen>
+    <dimen name="canhphaiEditText">20.0dp</dimen>
+    <dimen name="dorongButton">135.0dp</dimen>
+    <dimen name="cochu">18.0sp</dimen>
+    <dimen name="textsize">18.0sp</dimen>
+    <dimen name="textsize1">15.0sp</dimen>
+    <dimen name="textsize2">16.0dp</dimen>
+    <dimen name="top">50.0sp</dimen>
+    <dimen name="top1">25.0dp</dimen>
+    <dimen name="top_home">12.0sp</dimen>
+    <dimen name="sizetext">20.0sp</dimen>
+    <dimen name="chieucao">30.0sp</dimen>
+    <dimen name="chieurong">200.0dp</dimen>
+    <dimen name="img">50.0dp</dimen>
+    <dimen name="img1">30.0sp</dimen>
+    <dimen name="cdload">70.0dp</dimen>
+    <dimen name="kc10">10.0dp</dimen>
+    <dimen name="kc20">20.0dp</dimen>
+    <dimen name="kc25">25.0dp</dimen>
+    <dimen name="kc320">320.0dp</dimen>
+    <dimen name="kc50">50.0dp</dimen>
+    <dimen name="kc2">2.0dp</dimen>
+    <dimen name="testsize25">25.0sp</dimen>
+    <dimen name="kc177">177.0dp</dimen>
+    <dimen name="kc55">55.0dp</dimen>
+    <dimen name="kc70">70.0dp</dimen>
+    <dimen name="kc80">80.0dp</dimen>
+    <dimen name="kc140">140.0dp</dimen>
+    <dimen name="kc5">5.0dp</dimen>
+    <dimen name="kc60">60.0dp</dimen>
+    <dimen name="kc120">120.0dp</dimen>
+    <dimen name="kc35">35.0dp</dimen>
+    <dimen name="kc300">300.0dp</dimen>
+    <dimen name="kc30">30.0dp</dimen>
+    <dimen name="kc29">29.0dp</dimen>
+    <dimen name="kc200">200.0dp</dimen>
+    <dimen name="kc15">15.0dp</dimen>
+    <dimen name="kc1">1.0dp</dimen>
+    <dimen name="kc96">96.0dp</dimen>
+    <dimen name="kc45">45.0dp</dimen>
+    <dimen name="kc40">40.0dp</dimen>
+    <!--themnghiphep-->
+    <dimen name="top12">20.0dp</dimen>
+    <dimen name="tablerow">45.0dp</dimen>
+    <dimen name="cr1">20.0sp</dimen>
+    <dimen name="top3">16.0dp</dimen>
+    <dimen name="edt1">200.0dp</dimen>
+    <dimen name="chieucaoedt">100.0dp</dimen>
+    <dimen name="pading">15.0dp</dimen>
+    <!--lamviec-->
+    <dimen name="top4">50.0sp</dimen>
+    <dimen name="card">6.0dp</dimen>
+    <dimen name="card1">12.0dp</dimen>
+    <dimen name="left">30.0dp</dimen>
+    <dimen name="pading1">5.0dp</dimen>
+    <dimen name="height">50.0dp</dimen>
+    <dimen name="width">80.0dp</dimen>
+    <!--taikhoan-->
+    <dimen name="top5">40.0sp</dimen>
+    <dimen name="left2">30.0sp</dimen>
+    <dimen name="setting">12.0dp</dimen>
+    <dimen name="activity_horizontal_margin">16.0dp</dimen>
+    <dimen name="activity_vertical_margin">16.0dp</dimen>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="reply_label">Chấp Nhận</string>
+    <dimen name="canhtraihome">45dp</dimen>
+    <dimen name="dorongEditText">340dp </dimen>
+    <dimen name ="canhtrenEditText">110dp</dimen>
+    <dimen name="canhphaiEditText">20dp</dimen>
+    <dimen name="dorongButton">135dp</dimen>
+    <dimen name="cochu">18sp</dimen>
+  <dimen name="textsize">18sp</dimen>
+    <dimen name="textsize1">15sp</dimen>
+    <dimen name="textsize2">16dp</dimen>
+    <dimen name="top">50sp</dimen>
+    <dimen name="top1">25dp</dimen>
+    <dimen name="top_home">12sp</dimen>
+    <dimen name="sizetext">20sp</dimen>
+    <dimen name="chieucao">30sp</dimen>
+    <dimen name="chieurong">200dp</dimen>
+    <dimen name="img">50dp</dimen>
+    <dimen name="img1">30sp </dimen>
+    <dimen name="cdload">70dp</dimen>
+    <dimen name="kc10">10dp</dimen>
+    <dimen name="kc20">20dp</dimen>
+    <dimen name="kc25">25dp</dimen>
+    <dimen name="kc320">320dp</dimen>
+    <dimen name="kc50">50dp</dimen>
+    <dimen name="kc2">2dp</dimen>
+    <dimen name="testsize25">25sp</dimen>
+    <dimen name="kc177">177dp</dimen>
+    <dimen name="kc55">55dp</dimen>
+    <dimen name="kc70">70dp</dimen>
+    <dimen name="kc80">80dp</dimen>
+    <dimen name="kc140">140dp</dimen>
+    <dimen name="kc5">5dp</dimen>
+    <dimen name="kc60">60dp</dimen>
+    <dimen name="kc120">120dp</dimen>
+    <dimen name="kc35">35dp</dimen>
+    <dimen name="kc300">300dp</dimen>
+    <dimen name="kc30">30dp</dimen>
+    <dimen name="kc29">29dp</dimen>
+    <dimen name="kc200">200dp</dimen>
+    <dimen name="kc15">15dp</dimen>
+    <dimen name="kc1">1dp</dimen>
+    <dimen name="kc96">96dp</dimen>
+    <dimen name="kc45">45dp</dimen>
+    <dimen name="kc40">40dp</dimen>
+<!--    them nghi phep-->
+    <dimen name="top12">20dp</dimen>
+    <dimen name="tablerow">45dp</dimen>
+    <dimen name="cr1">20sp</dimen>
+    <dimen name="top3">16dp</dimen>
+    <dimen name="edt1">200dp</dimen>
+    <dimen name="chieucaoedt">100dp</dimen>
+    <dimen name="pading">15dp</dimen>
+<!--    lam viec-->
+    <dimen name="top4">50sp</dimen>
+    <dimen name="card">6dp</dimen>
+    <dimen name="card1">12dp</dimen>
+    <dimen name="left">30dp</dimen>
+    <dimen name="pading1">5dp</dimen>
+    <dimen name="height">50dp</dimen>
+    <dimen name="width">80dp</dimen>
+<!--    tai khoan-->
+    <dimen name="top5">40sp</dimen>
+    <dimen name="left2">30sp</dimen>
+    <dimen name="setting">12dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

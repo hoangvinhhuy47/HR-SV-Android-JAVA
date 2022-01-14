@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_item_task"
+    android:layout_marginTop="@dimen/Margin_padding5"
+    android:layout_marginBottom="@dimen/Margin_padding5"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="@dimen/Margin_padding30"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ImgStar"
+                android:layout_width="@dimen/width_icon"
+                android:layout_height="@dimen/heith_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/star" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/process_star"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"></ProgressBar>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/Margin_padding3">
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/Margin_padding3"
+                android:layout_marginBottom="@dimen/Margin_padding3"
+                android:id="@+id/grop_nametask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/taksname"
+                    android:layout_width="@dimen/width_taskname_item_task"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Xây dựng giao diện công Xây dựng giao diện công "
+                    android:textColor="@color/mauxanh"
+                    android:textSize="@dimen/TextSize16" />
+
+                <ImageView
+                    android:id="@+id/dropdown_menu"
+                    android:layout_width="@dimen/width_icon"
+                    android:layout_height="@dimen/heith_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/Margin_padding10"
+                    android:background="@drawable/img_menuitem" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/gdfg"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/heith_group_ngaytiendo_item_task"
+                android:layout_below="@+id/grop_nametask"
+                >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_item_group_ngaytiendo_item_task"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:background="@drawable/textboxaccount2">
+
+                    <TextView
+                        android:id="@+id/txt_tn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/Margin_padding2"
+                        android:text="Từ ngày"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/fromday"
+                        android:layout_marginBottom="@dimen/Margin_padding3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="20/09/2020\n00:00"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_item_group_ngaytiendo_item_task"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/Margin_padding4"
+                    android:background="@drawable/textboxaccount2">
+
+                    <TextView
+                        android:id="@+id/txt_dn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/Margin_padding2"
+                        android:text="Đến ngày"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/today"
+                        android:layout_marginBottom="@dimen/Margin_padding3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:text="20/09/2020\n00:00"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/width_item_group_ngaytiendo_item_task"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textboxaccount2">
+
+                    <TextView
+                        android:id="@+id/txt_td"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/Margin_padding5"
+                        android:text="Tiến độ"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14"></TextView>
+
+                    <TextView
+                        android:id="@+id/FinalPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_td"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/Margin_padding10"
+                        android:text="100%"
+                        android:textColor="@color/mauxanh"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/Margin_padding5"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ưu Tiên: Trung bình"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/Margin_padding7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Trạng thái: "
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <TextView
+                        android:id="@+id/TaskStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Chờ xác nhận"
+                        android:textColor="#FF0536"
+                        android:textSize="@dimen/TextSize13"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

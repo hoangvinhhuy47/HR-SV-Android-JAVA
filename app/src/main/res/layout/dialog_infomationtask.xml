@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_Dialog_infomationtask">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_Dialog_infomationtask"
+        android:background="@color/menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Chi tiết công việc"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize16"></TextView>
+
+        <ImageView
+            android:id="@+id/closeinftask"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@drawable/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/Margin_padding10"
+        android:paddingBottom="@dimen/Margin_padding10">
+
+        <LinearLayout
+            android:id="@+id/group_nameCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Tên công việc: "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <TextView
+                android:id="@+id/inftaskname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Xây dựng giao diện công Xây dựng giao diện công "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_tg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding45"
+            android:layout_below="@id/group_nameCV"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginTop="@dimen/Margin_padding15"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Thời gian: "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Margin_padding5"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Từ"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_item_group_ngaytiendo_item_task"
+                android:layout_height="match_parent"
+                android:background="@drawable/textboxaccount2"
+                android:padding="@dimen/Margin_padding3">
+
+                <TextView
+                    android:id="@+id/fromdaytaskinf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="20/09/2020\n00:00"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/Margin_padding5"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Đến"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_item_group_ngaytiendo_item_task"
+                android:layout_height="match_parent"
+                android:background="@drawable/textboxaccount2"
+                android:padding="@dimen/Margin_padding3">
+
+                <TextView
+                    android:id="@+id/todaytaskinf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="20/09/2020\n00:00"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_ut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_tg"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginTop="@dimen/Margin_padding15"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:id="@+id/prioritytaksinf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ưu tiên: Cao nhất"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15"></TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/group_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_ut"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginTop="@dimen/Margin_padding15"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Trạng thái: "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <TextView
+                android:id="@+id/stttaskinf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:text="Chờ xác nhận"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_td"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_status"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:layout_marginTop="@dimen/Margin_padding15"
+            android:layout_marginRight="@dimen/Margin_padding5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/Margin_padding5"
+                android:text="Tiến độ: "
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15" />
+
+            <TextView
+                android:id="@+id/finaltaskinf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="100%"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize15"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/imfexitinfo"
+                android:layout_width="@dimen/width_button_Dialog_infomationtask"
+                android:layout_height="@dimen/heith_button_Dialog_infomationtask"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="Chấp nhận"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_dialog_checkintime">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heith_content_dialog_checkintime"
+        android:background="@color/menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông báo"
+            android:textAllCaps="true"
+            android:textColor="@color/mautrang"
+            android:textSize="@dimen/TextSize16"></TextView>
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/Margin_padding8"
+            android:background="@drawable/exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/Margin_padding10"
+        android:paddingBottom="@dimen/Margin_padding10">
+
+        <TextView
+            android:id="@+id/ttvTitleCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/Margin_padding10"
+            android:layout_marginTop="@dimen/Margin_padding20"
+            android:layout_marginRight="@dimen/Margin_padding10"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="text"
+            android:textColor="@color/mauxanh"
+            android:textSize="@dimen/TextSize16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/acceptCheckIn"
+                android:layout_width="@dimen/width_button_dialog_checkintime"
+                android:layout_height="@dimen/heith_button_dialog_checkintime"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/Margin_padding16"
+                android:background="@drawable/buttonsettingconfig"
+                android:gravity="center"
+                android:text="Chấp nhận"
+                android:textAllCaps="true"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize14" />
+
+            <Button
+                android:id="@+id/closeCheckIn"
+                android:layout_width="@dimen/width_button_dialog_checkintime"
+                android:layout_height="@dimen/heith_button_dialog_checkintime"
+                android:layout_gravity="center"
+                android:background="@drawable/textboxaccount2"
+                android:gravity="center"
+                android:text="Hủy"
+                android:textAllCaps="true"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize14" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

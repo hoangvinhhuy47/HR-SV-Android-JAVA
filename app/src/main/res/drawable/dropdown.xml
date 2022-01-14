@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <padding
+                android:bottom="22.5dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:top="10dp" />
+            <size
+                android:width="5dp"
+                android:height="5dp"
+                ></size>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="end"
+            android:src="@android:drawable/arrow_down_float"
+            android:tint="@color/mauden" />
+    </item>
+</layer-list>

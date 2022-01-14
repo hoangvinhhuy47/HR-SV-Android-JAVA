@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/heith_item_leaveapplication"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="@dimen/Margin_padding5">
+
+    <RelativeLayout
+        android:id="@+id/backgroud_item_leave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/STT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize14" />
+
+                <TextView
+                    android:id="@+id/fromdayleaveIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="01/01/2000\n00:00"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize13" />
+
+                <TextView
+                    android:id="@+id/todayleaveIT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="01/01/2000\n00:00"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize13" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="chờ duyệt"
+                    android:textColor="@color/mauden"
+                    android:textSize="@dimen/TextSize13" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

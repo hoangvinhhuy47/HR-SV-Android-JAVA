@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/toplinear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding45"
+        android:background="#ffffff"
+        tools:ignore="Orientation">
+
+        <ImageView
+            android:id="@+id/backleave"
+            android:layout_width="@dimen/width_icon"
+            android:layout_height="@dimen/heith_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/Margin_padding5"
+            android:background="@drawable/back"
+            android:padding="@dimen/Margin_padding5"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông tin nhân viên"
+            android:textColor="@color/menu"
+            android:textSize="@dimen/TextSize18">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding70"
+        android:layout_below="@+id/toplinear"
+        android:layout_marginLeft="@dimen/Margin_padding5"
+        android:layout_marginRight="@dimen/Margin_padding5"
+        android:background="@drawable/backgroud_home">
+
+        <RelativeLayout
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/Margin_padding55"
+            android:layout_height="@dimen/Margin_padding55"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/Margin_padding10">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/Margin_padding55">
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/img"></ImageView>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Margin_padding55"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/Margin_padding10"
+            android:layout_toRightOf="@+id/avatar">
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Margin_padding30"
+                android:layout_centerVertical="true"
+                android:background="@drawable/backgroud_edt"
+                android:padding="@dimen/Margin_padding5"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize16" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top1"
+        android:layout_marginBottom="@dimen/Margin_padding55"
+        android:background="#ffffff">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Margin_padding2"
+            android:layout_marginTop="@dimen/Margin_padding5"
+            android:layout_marginRight="@dimen/Margin_padding2"
+            android:layout_marginBottom="@dimen/Margin_padding5"
+            app:cardBackgroundColor="#E8ECE9"
+            app:cardCornerRadius="@dimen/Margin_padding8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/Margin_padding5"
+                android:layout_marginRight="@dimen/Margin_padding5">
+
+                <RelativeLayout
+                    android:id="@+id/group_nametk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_httk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Tài khoản:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@+id/txt_httk"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_em"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_nametk"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_em"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Email:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/emailuser"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@+id/txt_em"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_ns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_em"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_ns"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Ngày sinh:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/dateborn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@+id/txt_ns"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_sdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_ns"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_sdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Số điện thoại:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding35"
+                        android:layout_below="@+id/txt_sdt"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:inputType="phone"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_dc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_sdt"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_dc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Địa chỉ:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/andress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding60"
+                        android:layout_below="@+id/txt_dc"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:paddingRight="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_cmnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_dc"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_cmnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="CMND/Căn Cước:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/number_cc"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding40"
+                        android:layout_below="@+id/txt_cmnd"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_tthn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/group_cmnd"
+                    android:layout_marginTop="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_tthn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Margin_padding5"
+                        android:text="Tình trạng hôn nhân:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <EditText
+                        android:id="@+id/MaritalStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/Margin_padding40"
+                        android:layout_below="@+id/txt_tthn"
+                        android:layout_marginLeft="@dimen/Margin_padding5"
+                        android:layout_marginRight="@dimen/Margin_padding5"
+                        android:background="@drawable/backgroud_edt2"
+                        android:paddingLeft="@dimen/Margin_padding5"
+                        android:textSize="@dimen/TextSize14" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/group_gt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/Margin_padding40"
+                    android:layout_below="@+id/group_tthn"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="@dimen/Margin_padding10">
+
+                    <TextView
+                        android:id="@+id/txt_gt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/Margin_padding20"
+                        android:text="Giới tính:"
+                        android:textColor="@color/mauden"
+                        android:textSize="@dimen/TextSize14" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/txt_gt"
+                        android:columnCount="2">
+
+                        <RadioButton
+                            android:id="@+id/madle_man"
+                            android:text="Nam"
+                            android:textSize="@dimen/TextSize14">
+
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/madle_women"
+                            android:layout_marginLeft="50dp"
+                            android:text="Nữ"
+                            android:textSize="@dimen/TextSize14">
+
+                        </RadioButton>
+                    </GridLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Margin_padding50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#CDE6CE">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/acceptuser"
+                android:layout_width="@dimen/width_button_activity_changepassword"
+                android:layout_height="@dimen/heith_button_activity_changepassword"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/textboxaccount"
+                android:text="Cập nhật"
+                android:textColor="@color/mautrang"
+                android:textSize="@dimen/TextSize13" />
+
+            <Button
+                android:id="@+id/backuser"
+                android:layout_width="@dimen/width_button_activity_changepassword"
+                android:layout_height="@dimen/heith_button_activity_changepassword"
+                android:layout_marginLeft="@dimen/Margin_padding10"
+                android:background="@drawable/textboxaccount2"
+                android:text="Hủy"
+                android:textColor="@color/mauden"
+                android:textSize="@dimen/TextSize13" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
